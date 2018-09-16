@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Sin Comentarios",
+  "version": "1.0",
+
+  "description": "Remueve comentarios de portales de noticias.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.ambito.com/*"],
+      "js": ["sincomentarios.js"]
+    }
+  ]
+
+}
